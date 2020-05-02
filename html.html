@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound Generater</title>
+  <link rel="stylesheet" href="css.css">
+
+  <body>
+
+<h1>Sound Generater</h1>
+
+<p id = volumetext>Volume : </p>
+
+
+<input type="range" id="volume" min="0" max="10"></input>
+
+</br>
+
+<p id="frequencytext">Frequency: </p>
+
+<input type="range" id="frequency" min="0" max="1000"></input>
+</br>
+
+<p id ="attacktext">Attack: </p>
+<input type="range" id="attack" min="0" max="3"></input>
+</br>
+
+<p id="releasetext">Release: </p>
+<input type="range" id="release" min="0" max="3"></input>
+</br>
+<p id = "distortiontext">Distortion: </p>
+<input type="range" id="distortion" min="0" max="10"></input>
+</br>
+
+<button id="playsound">Play sound</button> <button id="stopsound">Stop sound</button>
+
+
+
+
+
+    </body>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pizzicato/0.6.4/Pizzicato.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pizzicato/0.6.4/Pizzicato.min.js"></script>
+
+  <script src="sketch.js"></script>
